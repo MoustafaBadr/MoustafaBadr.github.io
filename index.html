@@ -46,15 +46,13 @@ button{cursor:pointer}
 }
 .brand{display:flex;align-items:center;gap:12px}
 .site-logo{
-  width:52px;height:52px;flex:0 0 52px;border-radius:15px;
-  display:grid;place-items:center;background:var(--ink);
-  border:2px solid var(--accent);
+  width:56px;height:56px;flex:0 0 56px;border-radius:15px;
+  display:grid;place-items:center;
   box-shadow:0 6px 15px rgba(31,122,104,.16);
-  transform:rotate(-3deg);
+  overflow:hidden;
 }
-.site-logo span{
-  color:#5fd1b5;font-size:1.8rem;font-weight:900;
-  transform:rotate(3deg);
+.site-logo img{
+  width:100%;height:100%;object-fit:cover;display:block;border-radius:15px;
 }
 .logo-caption{
   margin-top:6px;
@@ -278,7 +276,7 @@ tbody tr:nth-child(even) th{
   .sheet{border-radius:0;box-shadow:none;padding:16px 10px 30px}
   .top-row{align-items:flex-start;flex-direction:column}
   .brand{align-items:flex-start}
-  .site-logo{width:46px;height:46px;flex-basis:46px;border-radius:13px}
+  .site-logo{width:50px;height:50px;flex-basis:50px;border-radius:13px}
   .month-field{width:100%;justify-content:flex-start}
   .month-field input{flex:1;max-width:180px}
   .legend{grid-template-columns:1fr 1fr;gap:6px}
@@ -310,9 +308,9 @@ tbody tr:nth-child(even) th{
     <div class="brand">
       <div>
         <div class="site-logo" aria-label="TEMU Habits Tracker">
-          <img src="logo.jpeg" alt="TEMU Habits Tracker" style="width:100%;height:100%;border-radius:13px;object-fit:cover">
+          <img src="logo.jpeg" alt="TEMU Habits Tracker">
         </div>
-        <div class="logo-caption">انجز فى المنجز وممكن</div>
+        <div class="logo-caption">انجز فى المنجز</div>
       </div>
       <div>
         <h1 class="title">TEMU Habits Tracker</h1>
