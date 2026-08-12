@@ -477,7 +477,7 @@ tbody tr:nth-child(even) th{
       });
     });
     document.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>deleteHabit(b.dataset.delete));
-    document.querySelectorAll('[data-edit]').forEach(b=>editHabit(b.dataset.edit));
+    document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>editHabit(b.dataset.edit));
   }
 
   function escapeHtml(s){
